@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле для ввода аллергии -->
+    <EditText
+        android:id="@+id/etCustomAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите свою аллергию"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Кнопка для добавления аллергии -->
+    <Button
+        android:id="@+id/btnAddAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"/>
+
+</LinearLayout>

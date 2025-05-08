@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/menu_recipes"
+        android:icon="@drawable/ic_recipes"
+        android:title="Книга рецептов" />
+
+    <item
+        android:id="@+id/menu_gpt"
+        android:icon="@drawable/ic_gpt"
+        android:title="FoodWiseGPT" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Профиль" />
+
+</menu>

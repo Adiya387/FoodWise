@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="100dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvAllergyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Я хочу меню без ..."
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:gravity="center"/>
+
+        <!-- Прокручиваемый список кнопок с ограниченной высотой -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scrollbars="vertical"
+            android:overScrollMode="always">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Кнопки с аллергенами -->
+                <Button
+                    android:id="@+id/btnMilk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Молоко и молочные продукты"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnEggs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Яйца"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnNuts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Орехи"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnGluten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Глютен"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAlcohol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Алкоголь"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnFish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рыбные продукты"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnShellfish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Моллюски, креветки"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSoy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Соя"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnPeanuts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Арахис"
+                    android:layout_marginTop="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Сахар"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Кнопка для ввода своей аллергии -->
+        <Button
+            android:id="@+id/btnOtherAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Другое"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/btnNoAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет ограничений"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="@android:color/black"/>
+        <!-- Контейнер для фрагмента -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Кнопка далее -->
+        <Button
+            android:id="@+id/btnNextAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Завершить"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

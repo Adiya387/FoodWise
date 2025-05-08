@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "116642246949",
+    "project_id": "healthyfoodai",
+    "storage_bucket": "healthyfoodai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116642246949:android:0e5171552c22b156136acc",
+        "android_client_info": {
+          "package_name": "com.example.healthyfoodai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP4DtktmiirOvMxwlXtE1NzE1kEnXM0kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FDFCE2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvBmiInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Что такое ИМТ?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Общее объяснение -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Индекс массы тела (ИМТ) — это показатель, который позволяет оценить, соответствует ли масса тела человека его росту. Это важный инструмент для определения риска заболеваний, связанных с избыточным или недостаточным весом."
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Формула -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📐 Формула: ИМТ = Вес (кг) / (Рост (м))²"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Назначение -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 ИМТ используется для определения степени соответствия массы тела росту. Он помогает выявить дефицит массы тела, норму, предожирение или ожирение. Это может помочь принять решение об изменении образа жизни или проконсультироваться со специалистом."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Заголовок таблицы -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Таблица ИМТ по нормам"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Таблица в виде изображения -->
+        <ImageView
+            android:id="@+id/imgBmiTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi_table"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Таблица ИМТ"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>

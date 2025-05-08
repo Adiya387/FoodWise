@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/healthIndexContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="24dp">
+
+    <!-- Заголовок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvHealthIndexTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Индекс здоровья"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/btnHealthInfo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_info"
+            android:contentDescription="Инфо"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Миска -->
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/bowlImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m1" />
+
+        <TextView
+            android:id="@+id/tvHealthIndexScore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="4.30"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <!-- Питательные элементы -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvProteinValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Белки: 0 г" />
+
+            <TextView
+                android:id="@+id/tvFatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Жиры: 0 г" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvCarbValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Углеводы: 0 г" />
+
+            <TextView
+                android:id="@+id/tvEnergyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Калории: 0 ккал" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Пояснение шкалы -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,5–2,5 — неполезно, избегать"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3–4,4 — допустимо, но с осторожностью"
+        android:textColor="@color/health_yellow"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4,5–5 — полезно и рекомендовано"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp" />
+</LinearLayout>

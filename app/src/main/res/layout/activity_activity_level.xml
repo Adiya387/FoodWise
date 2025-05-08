@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="145dp"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"> <!-- Установим padding для всех элементов -->
+
+        <TextView
+            android:id="@+id/tvActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Какой у вас уровень активности?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <!-- Кнопка Низкий с дополнительным отступом сверху -->
+        <Button
+            android:id="@+id/btnLow"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:text="Низкий\nОфисная работа, минимум движений"
+            android:textAlignment="textStart"
+            android:textSize="16sp" /> <!-- Увеличены отступы внутри кнопки -->
+
+        <!-- Кнопка Средний с дополнительным отступом сверху -->
+        <Button
+            android:id="@+id/btnMedium"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="16dp"
+            android:text="Средний\nХодьба, лёгкие тренировки"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <!-- Кнопка Высокий с дополнительным отступом сверху -->
+        <Button
+            android:id="@+id/btnHigh"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:text="Высокий\nСпорт, активная работа"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:padding="16dp" />
+
+        <!-- Кнопка Завершить с дополнительным отступом сверху -->
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Далее"
+            android:layout_marginTop="177dp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

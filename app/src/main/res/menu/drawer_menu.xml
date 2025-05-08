@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Пункт избранных рецептов -->
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_star"
+        android:title="Избранные рецепты" />
+
+    <!-- Переход в настройки -->
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+
+    <!-- Экран "О приложении" -->
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_info"
+        android:title="О приложении" />
+
+    <!-- Выход из аккаунта -->
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Выйти" />
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#F44336</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="red">#D32F2F</color>
+    <color name="green_toolbar">#4CAF50</color>
+    <color name="protein">#FFB300</color> <!-- Оранжевый -->
+    <color name="fat">#1976D2</color>     <!-- Синий -->
+    <color name="carb">#9C27B0</color>    <!-- Фиолетовый -->
+    <color name="green">#4CAF50</color>
+    <color name="blue">#2196F3</color>
+    <color name="index_red">#FF6B6B</color>
+    <color name="index_yellow">#FFD166</color>
+    <color name="index_green">#06D6A0</color>
+    <color name="health_red">#D32F2F</color>
+    <color name="health_yellow">#FBC02D</color>
+    <color name="health_green">#388E3C</color>
+
+    <color name="green_700">#388E3C</color> <!-- Насыщенный зелёный -->
+
+
+</resources>

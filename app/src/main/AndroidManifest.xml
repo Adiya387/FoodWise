@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthyfoodai">
+
+    <!-- Разрешение на доступ в интернет -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthyFoodAI">
+
+
+        <!-- Экран сплэш -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Онбординг -->
+        <activity android:name=".OnboardingActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".LoginActivity" android:exported="false" />
+
+        <!-- Главный экран -->
+        <activity android:name=".MainActivity" android:exported="false" />
+
+        <!-- Анкета -->
+        <activity android:name=".UserNameActivity" android:exported="false" />
+        <activity android:name=".GenderActivity" android:exported="false" />
+        <activity android:name=".AgeActivity" android:exported="false" />
+        <activity android:name=".HeightActivity" android:exported="false" />
+        <activity android:name=".WeightActivity" android:exported="false" />
+        <activity android:name=".GoalActivity" android:exported="false" />
+        <activity android:name=".ActivityLevelActivity" android:exported="false" />
+        <activity android:name=".AllergyActivity" android:exported="false" />
+        <activity android:name=".ProfileCompleteActivity" android:exported="false" />
+
+        <!-- Редактирование профиля -->
+        <activity android:name=".EditProfileOptionsActivity" android:exported="false" />
+        <activity android:name=".EditFieldActivity" android:exported="false" />
+
+        <!-- Функционал -->
+        <activity android:name=".FavoritesActivity" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:exported="false" />
+        <activity android:name=".AboutActivity" android:exported="false" />
+        <activity android:name=".RecipeListActivity" android:exported="false" />
+        <activity android:name=".CategoryRecipesActivity" android:exported="false" />
+        <activity android:name=".RecipeDetailActivity" android:exported="false" />
+        <activity android:name=".Profile2" android:exported="false" />
+        <activity android:name=".ManualMealAddActivity" />
+        <activity android:name=".FullRecipeActivity" />
+
+        <!-- ✅ Активити загрузки рецептов -->
+        <activity android:name=".RecipesUploaderActivity" android:exported="false" />
+        <activity android:name=".BmiDetailsActivity" />
+
+    </application>
+</manifest>

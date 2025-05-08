@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FDFCE2"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <!-- Сетка категорий -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="24dp"
+            tools:listitem="@layout/item_category" />
+
+        <!-- Заголовок блока "Рецепт дня" -->
+        <TextView
+            android:id="@+id/tvMealOfDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рецепт дня"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Горизонтальный список: Завтрак / Обед / Ужин / Перекус -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMealsHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="280dp"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_meal_category" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

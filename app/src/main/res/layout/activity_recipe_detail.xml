@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCE2"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Картинка -->
+        <ImageView
+            android:id="@+id/imgRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Название -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название рецепта"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Описание -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание рецепта"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Калории -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Калории и БЖУ"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 210 ккал"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогресс БЖУ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <View
+                android:id="@+id/proteinBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/protein" />
+
+            <View
+                android:id="@+id/fatBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/fat" />
+
+            <View
+                android:id="@+id/carbBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/carb" />
+        </LinearLayout>
+
+        <!-- Подписи БЖУ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvProteinPercent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="🟡 Белки: 0 г (0%)"
+                android:textSize="12sp"
+                android:gravity="start"
+                android:textColor="@color/protein" />
+
+            <TextView
+                android:id="@+id/tvFatPercent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="🔵 Жиры: 0 г (0%)"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/fat" />
+
+            <TextView
+                android:id="@+id/tvCarbPercent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="🟣 Углеводы: 0 г (0%)"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:textColor="@color/carb" />
+        </LinearLayout>
+
+        <!-- Ингредиенты -->
+        <LinearLayout
+            android:id="@+id/ingredientsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Шаги приготовления -->
+        <LinearLayout
+            android:id="@+id/stepsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Вредные факторы -->
+        <LinearLayout
+            android:id="@+id/unhealthyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 🥣 Индекс здоровья -->
+        <include
+            layout="@layout/view_health_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <!-- Кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddToDiary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Добавить в дневник питания"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_add"
+                android:drawablePadding="8dp"
+                android:padding="14dp" />
+
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_favorite_border"
+                android:contentDescription="Избранное" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
